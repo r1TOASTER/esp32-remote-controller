@@ -60,15 +60,17 @@ async def notification_handler(sender, data):
                 print("Audio down -5")
                 set_volume_level(-5)
             case 4:
-                print("Play")
+                print("Play / Pause")
                 keyboard.send("space")
             case 5:
-                print("Pause")
-                keyboard.send("space")
+                print("Mute / Unmute")
+                keyboard.send("m")
             case 6:
                 print("Skip")
+                keyboard.send("shift+n")
             case 7:
                 print("Return")
+                keyboard.send("esc")
             case 8:
                 print("Exit / Enter fullscreen")
                 keyboard.send("f11")
